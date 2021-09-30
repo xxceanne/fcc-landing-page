@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            h1 {
+                font-family: 'Pacifico';
+                font-size: 3rem;
+                color: #FFFCF9;
+            }
+            body {
+                background-color: #FFFCF9;
+                overflow-x: hidden;
+                font-family: 'Open Sans';
+            }
+            li {
+                list-style: none;
+            }
+            a {
+                color: #FFD166;
+                text-decoration: none;
+            }
+            header {
+                padding: 2% 0;
+                max-height: 120px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: #26547C;
+                width: 100%;
+            }
+            #nav-bar {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            #nav-bar > ul {
+                width: 300px;
+                display: flex;
+                justify-content: space-evenly;
+                font-weight: bolder;
+            }
+            .logo {
+                display: flex;
+                flex-direction: row;
+                align-self: center;
+                width: 100%;
+                max-height: 120px;
+                max-width: 300px;
+                padding: auto;
+            }
+            #About{
+                background-color: #EF476F;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding: 2rem;
+            }
+            iframe {
+                padding: 2rem;
+                width: 100%;
+                height: 300px;
+            }
+            #description {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                padding: auto;
+                justify-self: baseline;
+                font-size: 1.2rem;
+            }
+            h2 {
+                color: #FFFCF9;
+                padding: 2vw;
+                font-size: 1rem;
+            }
+            #Elite {
+                background-color: #06D6A0;
+                display: flex;
+                padding: 3rem;
+                justify-content: space-evenly;
+                color: #FFFCF9;
+            }
+            .product {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: calc(100% / 3);
+                margin: 0 25px;
+                box-shadow: 0px 0px 7px 10px rgba(38, 84, 124,0.7);
+                border-radius: 5px;
+                padding: 2rem 1.5rem;
+            }
+            #Duo, #Family {
+                padding: 2.5rem;
+            }
+            .product > ul > li {
+                list-style: inside;
+                text-align: justify;
+            }
+            .level {
+                font-family: 'Pacifico';
+                font-size: 3rem;
+            }
+            .product > h2 {
+                font-size: 1.5rem;
+            }
+            button, #submit {
+                border: 0;
+                margin: 15px 0;
+                background-color: #FFFCF9;
+                font-size: 1rem;
+                padding: 1rem;
+                border-radius: 5px;
+                border: 1px solid #000;
+            }
+            button:hover {
+                background-color: #FFD166;
+                transition: background-color 1s;
+            }
+            #submit:hover {
+                background-color: #EF476F;
+                transition: background-color 1s;
+            }
+            #SignUp, form {
+                background-color: #FFD166;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                color: #FFFCF9;
+                height: 100%;
+            }
+            label {
+                display: flex;
+                font-family: 'Pacifico';
+                font-size: 3rem;
+                padding: auto;
+            }
+            #email {
+                display: flex;
+                max-width: 275px;
+                width: 100%;
+                padding: 5px;
+                border: 2px solid #000;
+                height: 40px;
+            }
+            #submit {
+                display: flex;
+                max-width: 100px;
+                width: 100%;
+                height: 50px;
+                justify-content: center;
+            }
+            footer {
+                background-color: #26547C;
+                color: #FFD166;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                padding: 20px;
+            }
+            footer > ul {
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+            @media (max-width: 760px) {
+                #About {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #Elite {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2.5rem;
+                }
+                .product {
+                    width: 100%;
+                    padding: 2rem 1rem;
+                    margin: 30px 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img id="header-img" class="logo" 
+            src="https://i.ibb.co/zV75SWY/logo.png" 
+            alt="Tunes logo">
+            <nav id="nav-bar">
+                <ul>
+                <li><a class="nav-link" href="#About">About</a></li>
+                <li><a class="nav-link" href="#Elite">Elite</a></li>
+                <li><a class="nav-link" href="#SignUp">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <section id="About">
+                <h2 id="description">With Tunes, it’s easy to find the right
+                    music or podcast for every moment – on your phone, your computer,
+                    your tablet and more.<br><br>
+                    There are millions of tracks and episodes on Tunes. So whether
+                    you’re behind the wheel, working out, partying or relaxing, the
+                    right music or podcast is always at your fingertips. Choose what
+                    you want to listen to, or let Tunes surprise you.<br><br>
+                    Soundtrack your life with Tunes. Subscribe or listen for free.
+                    </h2>
+                <iframe 
+                id="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5qap5aO4i9A"
+                frameborder="0"
+                allowfullscreen></iframe>
+            </section>
+        </div>
+            <section id="Elite">
+                <div class="product" id="individual">
+                    <div class=level>Individual</div>
+                    <h2>$9.99</h2>
+                <ul>
+                    <li>Ad-free music listening</li>
+                    <li>Play anywhere - even offline</li>
+                    <li>On-demand playback</li>
+                </ul>
+                <button class="get-started">Get Started</button>
+                    </div>
+                </div>
+                <div class="product" id="Duo">
+                    <div class=level>Duo</div>
+                    <h2>$12.99</h2>
+                <ul>
+                    <li>2 Elite accounts for a couple under one roof</li>
+                    <li>Duo Mix: a playlist for two,<br>regularly updated with music you both enjoy</li>
+                    <li>Ad-free music listening, play offline, on-demand playback</li>
+                </ul>
+                <button class="get-started">Get Started</button>
+                    </div>
+                </div>
+                <div class="product" id="Family">
+                    <div class=level>Family</div>
+                    <h2>$15.99</h2>
+                <ul>
+                    <li>6 Elite accounts for family members living under one roof</li>
+                    <li>Family Mix: a playlist for your family,<br>regularly updated with music you all enjoy</li>
+                    <li>Block explicit music</li>
+                    <li>Ad-free music listening, play offline, on-demand playback</li>
+                </ul>
+                <button class="get-started">Get Started</button>
+                    </div>
+                </div>
+            </section>
+            <section id="SignUp">
+            <form id="form" action="https://www.freecodecamp.com/email-submit)">
+                <label for="email" id="SignUp">Start listening.</label>
+                <input 
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                required><br>
+                <input id="submit" type="submit" value="Sign Up">
+        </form>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">About Ads</a></li>
+            </ul>
+        </footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
